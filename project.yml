@@ -1,0 +1,69 @@
+name: HWANGTODO
+options:
+  bundleIdPrefix: com.hwangtodo
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "0.2"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    INFOPLIST_OUTPUT_FORMAT: xml
+    # Manual signing so the App Group entitlement is applied verbatim. Automatic
+    # signing with no team strips App Groups (empty profile intersection), and
+    # CODE_SIGNING_REQUIRED=NO sets ENTITLEMENTS_ALLOWED=NO which strips them too.
+    # On the simulator this still ad-hoc signs without a provisioning profile.
+    CODE_SIGN_STYLE: Manual
+    PROVISIONING_PROFILE_SPECIFIER: ""
+
+targets:
+  HWANGTODO:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/App
+      - path: Sources/Shared
+    dependencies:
+      - target: HWANGTODOWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hwangtodo.app
+        CODE_SIGN_ENTITLEMENTS: Sources/App/HWANGTODO.entitlements
+    scheme: {}
+    info:
+      path: Sources/App/Info.plist
+      properties:
+        CFBundleDisplayName: HWANGTODO
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        NSSupportsLiveActivities: true
+        NSCalendarsUsageDescription: "HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask."
+        NSCalendarsFullAccessUsageDescription: "HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask."
+        CFBundleURLTypes:
+          - CFBundleURLName: com.hwangtodo.app
+            CFBundleURLSchemes:
+              - hwangtodo
+
+  HWANGTODOWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Sources/Widgets
+      - path: Sources/Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hwangtodo.app.widgets
+        CODE_SIGN_ENTITLEMENTS: Sources/Widgets/HWANGTODOWidgets.entitlements
+        SKIP_INSTALL: YES
+    scheme: {}
+    info:
+      path: Sources/Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: HWANGTODO
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
