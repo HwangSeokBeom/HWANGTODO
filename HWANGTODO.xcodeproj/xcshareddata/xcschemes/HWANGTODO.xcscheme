@@ -39,6 +39,28 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "HWANGTODOCoreTests"
+               BuildableName = "HWANGTODOCoreTests"
+               BlueprintName = "HWANGTODOCoreTests"
+               ReferencedContainer = "container:Packages/HWANGTODOKit">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "99A2338A6D244B818715BED3"
+               BuildableName = "HWANGTODOUITests.xctest"
+               BlueprintName = "HWANGTODOUITests"
+               ReferencedContainer = "container:HWANGTODO.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
       </CommandLineArguments>

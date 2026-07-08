@@ -1,0 +1,21 @@
+# SwiftFormat — matches the project's Swift 6.3 / iOS 26 style.
+--swiftversion 6.3
+
+# Rules
+--disable wrapMultilineStatementBraces, andOperator
+--enable isEmpty, sortImports
+
+# Formatting options
+--indent 4
+--maxwidth 130
+--wraparguments before-first
+--wrapcollections before-first
+--closingparen balanced
+--commas always
+--trimwhitespace always
+--stripunusedargs closure-only
+--self remove
+--importgrouping testable-bottom
+
+# Generated / vendored paths
+--exclude HWANGTODO.xcodeproj, DerivedData, .build

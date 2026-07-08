@@ -1,52 +1,76 @@
+import HWANGTODOCore
+import HWANGTODODesign
 import SwiftUI
 
-/// One quadrant tile in the 2×2 grid. Color is a thin accent; typography leads.
+/// One cell of the 정리 2×2 grid (spec §8): quadrant name, the 급함×중요함 axis
+/// reading, the open count, and the representative task. Deliberately
+/// render-only — navigation belongs to `MatrixView`, so the card previews and
+/// tests without a repository.
 struct QuadrantCard: View {
-    let quadrant: MatrixQuadrant
-    let count: Int
-    let topTasks: [MatrixTask]
+    let quadrant: Quadrant
+    let openCount: Int
+    /// The quadrant's representative task (spec §8 "각 분면의 대표 할 일").
+    let topTaskTitle: String?
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Theme.Spacing.s) {
-            HStack(spacing: 6) {
-                Image(systemName: quadrant.symbol).foregroundStyle(quadrant.accent)
-                Spacer()
-                Text("\(count)").font(.title3.weight(.semibold)).monospacedDigit()
-            }
-            VStack(alignment: .leading, spacing: 2) {
+        VStack(alignment: .leading, spacing: Theme.Spacing.xs) {
+            HStack(spacing: Theme.Spacing.xs) {
+                Image(systemName: quadrant.symbol)
+                    .font(Theme.Typography.badge)
                 Text(quadrant.title)
-                    .font(.subheadline.weight(.semibold))
-                    .fixedSize(horizontal: false, vertical: true)
-                Text(quadrant.actionLabel)
-                    .font(.caption)
-                    .foregroundStyle(quadrant.accent)
+                    .font(Theme.Typography.cardTitle)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                Spacer(minLength: 0)
             }
+            .foregroundStyle(quadrant.accent)
 
-            if topTasks.isEmpty {
-                Text("비어 있음")
-                    .font(.caption)
-                    .foregroundStyle(.tertiary)
-                    .padding(.top, 2)
-            } else {
-                VStack(alignment: .leading, spacing: 4) {
-                    ForEach(topTasks.prefix(3)) { task in
-                        HStack(spacing: 5) {
-                            Circle().fill(.secondary).frame(width: 3, height: 3)
-                            Text(task.title).font(.caption).lineLimit(1).foregroundStyle(.secondary)
-                        }
-                    }
-                }
-                .padding(.top, 2)
-            }
-            Spacer(minLength: 0)
+            Text(quadrant.axisDescription)
+                .font(Theme.Typography.badge)
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+
+            Spacer(minLength: Theme.Spacing.s)
+
+            Text("\(openCount)")
+                .font(Theme.Typography.number)
+                .foregroundStyle(openCount > 0 ? Color.primary : Color.secondary)
+
+            Text(topTaskTitle ?? "비어 있어요")
+                .font(Theme.Typography.meta)
+                .foregroundStyle(topTaskTitle == nil ? Color.secondary.opacity(0.6) : Color.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.9)
         }
-        .frame(maxWidth: .infinity, minHeight: 150, alignment: .topLeading)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .cardSurface()
-        .overlay(alignment: .leading) {
-            RoundedRectangle(cornerRadius: 2)
-                .fill(quadrant.accent.opacity(0.85))
-                .frame(width: 3)
-                .padding(.vertical, Theme.Spacing.m)
+        .contentShape(RoundedRectangle(cornerRadius: Theme.Radius.card, style: .continuous))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(accessibilitySummary)
+    }
+
+    private var accessibilitySummary: String {
+        var summary = "\(quadrant.title), \(quadrant.axisDescription), \(openCount)개"
+        if let topTaskTitle {
+            summary += ", 대표 할 일 \(topTaskTitle)"
         }
+        return summary
     }
 }
+
+#if DEBUG
+#Preview("분면 카드") {
+    LazyVGrid(
+        columns: [GridItem(.flexible(), spacing: Theme.Spacing.s), GridItem(.flexible(), spacing: Theme.Spacing.s)],
+        spacing: Theme.Spacing.s
+    ) {
+        QuadrantCard(quadrant: .urgentImportant, openCount: 2, topTaskTitle: "회의 자료 마무리")
+        QuadrantCard(quadrant: .importantNotUrgent, openCount: 3, topTaskTitle: "운동 계획 세우기")
+        QuadrantCard(quadrant: .urgentNotImportant, openCount: 1, topTaskTitle: "우편물 발송 맡기기")
+        QuadrantCard(quadrant: .notUrgentNotImportant, openCount: 0, topTaskTitle: nil)
+    }
+    .padding(Theme.Spacing.m)
+    .background(Theme.screenBackground)
+}
+#endif
