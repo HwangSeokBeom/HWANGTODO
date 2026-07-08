@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>ko</string>
 	<key>CFBundleDisplayName</key>
 	<string>HWANGTODO</string>
 	<key>CFBundleExecutable</key>
@@ -31,11 +31,17 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string>HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask.</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask.</string>
+	<string>할 일을 캘린더 일정으로 만들고 오늘 일정을 보여 드리기 위해 캘린더 접근이 필요해요. 일정은 요청할 때만 만들어져요.</string>
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+	<string>할 일을 캘린더 일정으로 만들 때만 캘린더에 기록해요.</string>
 	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSSupportsLiveActivitiesFrequentUpdates</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

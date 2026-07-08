@@ -7,58 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011A7568558C8E037014696D /* MatrixTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180757FE64A0DD7ED4B49FF0 /* MatrixTask.swift */; };
-		03FC22AD7F24547ABFC125FC /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F86CFB6BCEBE0A8FE9BB4 /* SetupView.swift */; };
-		040BA13018355B86D5721AD4 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F2404CA09DD1304DBA202 /* ChatMessage.swift */; };
 		04141AFFC263A6588756F29B /* NavigationIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7B71782AB35D58BDFE964 /* NavigationIntents.swift */; };
+		04D74A66E850A9A32183B0CA /* HWANGTODOCore in Frameworks */ = {isa = PBXBuildFile; productRef = A3350B988703452479B8A7E8 /* HWANGTODOCore */; };
+		0C5F1A086438465DF0EE6DD5 /* CaptureSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325E03D6B1BB9DEE24E6ED8D /* CaptureSheetView.swift */; };
 		0C6C2A1224E065CE6EA3B9BA /* CaptureIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902779077C178252133BCA22 /* CaptureIntents.swift */; };
 		0E1F65CEEAFA1AE74B899C49 /* HWANGTODOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349B381157A6BADE8E88D6 /* HWANGTODOApp.swift */; };
+		12DFAC6CB2E1F49B33BB1AF2 /* HWANGTODODesign in Frameworks */ = {isa = PBXBuildFile; productRef = 53D5625AEF4117F80D925665 /* HWANGTODODesign */; };
 		1773494E55D97AC895155F23 /* QuadrantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F47FAB5682DA395B99EAEBB /* QuadrantDetailView.swift */; };
-		194EBB7E9C73F9516E9DD9AC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021B08CA58A1D799D032454F /* Enums.swift */; };
 		1A95A3F9BA5D728857FC6963 /* OrganizeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEE76CAA522D4CCDE46566A /* OrganizeSheet.swift */; };
 		23DC9E595F2567EF3A7BB4D8 /* FocusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0F21A2B9035B7DDDF01AF /* FocusLiveActivity.swift */; };
+		246D51811E643C9F8FE3CC03 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E11B1F9E4627ADAB52B273 /* AppShortcuts.swift */; };
+		24DF41B811B124E7390206C4 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E55CC949C16F96793F869B /* TaskCardView.swift */; };
 		283424C193D2418CFE9BAECF /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D8DEEB1BD53E5CDE5FA212 /* MatrixView.swift */; };
 		293250BD27824F728E48C11F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9123032B6BD712C35B35511A /* AppRouter.swift */; };
-		2FDEA276057D62FD8632DD72 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5058B113D1487300834E216 /* CaptureView.swift */; };
-		39E6F6F7E74F72092D607902 /* HWANGTODOControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19A368754544376F9A201A /* HWANGTODOControl.swift */; };
-		46AF3D8EBD6A1EDB1C93F710 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DEF4EDAB73196DD03E3BF /* Routine.swift */; };
+		2C6F0DF47D5A4A12774FB096 /* CaptureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A42D9B79F42F7BA894162 /* CaptureControl.swift */; };
+		301DE22467B4DFC757D7B29D /* SettingsSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B37D1C83165FE93CBBD48 /* SettingsSurface.swift */; };
+		339E1C0BB35CCDFC6B551A0B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C10538432460EEC0AE508BFA /* PrivacyInfo.xcprivacy */; };
+		47E23C0B6342260C7839BC7D /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC719CBC90770761D875BF /* TaskDetailView.swift */; };
 		512733CBB4799310349128BE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026870F4F86591D102BECBF /* OnboardingView.swift */; };
-		5331D3044E0843CA9232D3B7 /* Enums 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E46D4655A05F03E078DF863 /* Enums 2.swift */; };
-		58CA3E0BCCAAD024A1240E6A /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16A19CEC5DFF90E0DA6F0B /* AppGroup.swift */; };
+		593F4071FB92E2D5B2065E90 /* HomeWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79B4308D2EF5130B2341D03 /* HomeWidgets.swift */; };
+		5A05D044E6F706860625D27C /* CaptureHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86194E98AA0D562F6B7E6BF6 /* CaptureHomeView.swift */; };
 		5E12271F67F48EBBC65E85F5 /* HWANGTODOWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EE57C0B8965C99C71E31DD03 /* HWANGTODOWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		60B0FC194AB4630FBA7BD0BB /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007779A61577D2AC20EC95E5 /* FocusView.swift */; };
-		6A71AEBEA9246CE54C8859CB /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E267D2232174EB3C1BCBE /* TaskStore.swift */; };
-		6B557FD242CEDD1B27CE6290 /* ChatParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A51BF7F9B999D92E109355 /* ChatParser.swift */; };
-		7037576CF0DB31D32E6951FC /* HomeMatrixWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1D6D3E0C8DE500F16A371 /* HomeMatrixWidgets.swift */; };
-		7C9F4577F68F613E05C71444 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16A19CEC5DFF90E0DA6F0B /* AppGroup.swift */; };
-		7CBE2AE4ECAC949819E6B296 /* SampleDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A57791D9089978CC5031AD /* SampleDataSeeder.swift */; };
 		8135D77ACCCCAFF4540E0112 /* LockScreenWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58443774052D9A8672B857 /* LockScreenWidgets.swift */; };
-		82C6AA2F7ECB593303AD1C2F /* Enums 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E46D4655A05F03E078DF863 /* Enums 2.swift */; };
 		848F630E88B0E2224714D0E6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1150AF0AC2622056808E29 /* ChatView.swift */; };
-		8BABB23DEE0934D76863FD26 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021B08CA58A1D799D032454F /* Enums.swift */; };
+		85E3F5EA9231F2F568F6584C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A5DBF81E84EA572A7BADF27C /* PrivacyInfo.xcprivacy */; };
+		8B40EC799673D11C0532421C /* RoutineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970E1B699BAD63714DBA781 /* RoutineListView.swift */; };
 		93430B82A52E611AAEC0DC3A /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A5087606D36B31DEBC704 /* RootTabView.swift */; };
 		938EFBAD24A53A4D1C253B24 /* HWANGTODOWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EB821AEC53A21220E9AC51 /* HWANGTODOWidgetBundle.swift */; };
 		94306BA0916FB970519EB180 /* FocusSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C3399C7FBE6D81439D364 /* FocusSessionManager.swift */; };
-		959BDF293781F74C8E09103A /* MatrixTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180757FE64A0DD7ED4B49FF0 /* MatrixTask.swift */; };
-		96BC0E80355044FDFD1C7952 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DEF4EDAB73196DD03E3BF /* Routine.swift */; };
-		977B8B13727149449F9FB4CD /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DDE4C079EF1EE762E3921E /* RoutineView.swift */; };
-		AE2B8EBBF1E3CBF1E2CBDEBE /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909107F47F56D2681265B549 /* InboxView.swift */; };
-		B2C2AA6D01AB27734F58367A /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B557A974D16F0B05F90FA4 /* TaskModel.swift */; };
-		BDBFFC869545C93037618BEF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FD78C9032E060502037A1 /* Theme.swift */; };
-		C0FBDF1E17F6B74D164C5DFB /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E267D2232174EB3C1BCBE /* TaskStore.swift */; };
-		C32F4F6CF618DAB2E3468AC1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C69BC7F571B5844E2E72F0 /* CalendarView.swift */; };
-		C38D5FCC2125D5E6B83B3FCC /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F2404CA09DD1304DBA202 /* ChatMessage.swift */; };
 		C53D525AC833AEF2B3B6D5AC /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC8505CEC0B964D43E7E29 /* NotificationManager.swift */; };
-		CA91CF22B4A62FE43EB0D97B /* MatrixProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9BC0AB69D5CA2FEB0BD90A /* MatrixProvider.swift */; };
-		CB9584ACD233A639C7A8FD48 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C561934878A3A768AFAE68 /* TaskCardView.swift */; };
-		E8E559A138573F8EF81A5BE8 /* FocusActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E061F5B4F9400F04F8BCCDC /* FocusActivityAttributes.swift */; };
+		C87A7F6131FAF707B95A646E /* FocusIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D141F271E282179508F6CF /* FocusIntents.swift */; };
+		CD274ED316513A65F969D6A5 /* GlanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5757315E9AEA8C892D71873 /* GlanceProvider.swift */; };
+		D66E86C77AF51880FBE7F043 /* SurfaceDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656FC5A35B4D028D9801439 /* SurfaceDetailSheet.swift */; };
+		D92642D309E082D8A86390FB /* WidgetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F78D2110D93ADD06E3D61 /* WidgetIntents.swift */; };
+		DD2CDA06804D41C8CE4EE10E /* HWANGTODODesign in Frameworks */ = {isa = PBXBuildFile; productRef = E0FDBB4D7B5AF7B53AD4B516 /* HWANGTODODesign */; };
+		EA380C10049315840FA10EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AF9048BD8710E018ACC51C /* Assets.xcassets */; };
+		EDD19B86BE5166F3E654BFB6 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B8FE9DCEDFA38D0F6FAC3A /* ScheduleView.swift */; };
 		F04ECAE32DA6F917778262B3 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D9EED63AA26DA61BC884C /* CalendarService.swift */; };
-		F05ED9EFFAD91C4EF60C2AB3 /* FocusActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E061F5B4F9400F04F8BCCDC /* FocusActivityAttributes.swift */; };
 		F3DCC91AC304C5FEDE2E7733 /* QuadrantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF8567E9324DA30D3FD064 /* QuadrantCard.swift */; };
-		F42D5F9C50EC5643C42FDD79 /* SampleDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A57791D9089978CC5031AD /* SampleDataSeeder.swift */; };
+		F56D66B24A989E741BD5ACC3 /* HWANGTODOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 743A5EFDBF1424277DAC5084 /* HWANGTODOCore */; };
+		FA2F88FE8D0E4264BD67A6C6 /* CaptureFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90774E94BD4AF329746387A2 /* CaptureFlowUITests.swift */; };
+		FAE77390BB455C2C7F9F1F22 /* SettingsChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4CEE4BC6B82D11A514FB1 /* SettingsChecklistView.swift */; };
+		FD9D26F49318A022F72E58E1 /* SurfaceChecklistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119CB21BD5B62950F76E60B /* SurfaceChecklistRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02095E97571A46C09148FA1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5E69484661A7DCF23EB1773 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87EF04BFCCAEB019224EA0FC;
+			remoteInfo = HWANGTODO;
+		};
 		9AA68A4367F17C1042446FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5E69484661A7DCF23EB1773 /* Project object */;
@@ -84,51 +85,73 @@
 
 /* Begin PBXFileReference section */
 		007779A61577D2AC20EC95E5 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		021B08CA58A1D799D032454F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		06A51BF7F9B999D92E109355 /* ChatParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatParser.swift; sourceTree = "<group>"; };
-		0C3DEF4EDAB73196DD03E3BF /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		08AF9048BD8710E018ACC51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15EB821AEC53A21220E9AC51 /* HWANGTODOWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWANGTODOWidgetBundle.swift; sourceTree = "<group>"; };
-		180757FE64A0DD7ED4B49FF0 /* MatrixTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTask.swift; sourceTree = "<group>"; };
-		1A6E267D2232174EB3C1BCBE /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		27E86043EF1385C75BF4485E /* HWANGTODOWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HWANGTODOWidgets.entitlements; sourceTree = "<group>"; };
+		2970E1B699BAD63714DBA781 /* RoutineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListView.swift; sourceTree = "<group>"; };
+		325E03D6B1BB9DEE24E6ED8D /* CaptureSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSheetView.swift; sourceTree = "<group>"; };
 		3B1150AF0AC2622056808E29 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3B349B381157A6BADE8E88D6 /* HWANGTODOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWANGTODOApp.swift; sourceTree = "<group>"; };
 		42D8DEEB1BD53E5CDE5FA212 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		437D9EED63AA26DA61BC884C /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
-		4E46D4655A05F03E078DF863 /* Enums 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums 2.swift"; sourceTree = "<group>"; };
+		47E11B1F9E4627ADAB52B273 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
 		4FEE76CAA522D4CCDE46566A /* OrganizeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeSheet.swift; sourceTree = "<group>"; };
+		50E55CC949C16F96793F869B /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
 		5B58443774052D9A8672B857 /* LockScreenWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgets.swift; sourceTree = "<group>"; };
-		5E061F5B4F9400F04F8BCCDC /* FocusActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityAttributes.swift; sourceTree = "<group>"; };
-		64A57791D9089978CC5031AD /* SampleDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataSeeder.swift; sourceTree = "<group>"; };
+		65BC719CBC90770761D875BF /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		6F47FAB5682DA395B99EAEBB /* QuadrantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantDetailView.swift; sourceTree = "<group>"; };
-		73DDE4C079EF1EE762E3921E /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
-		75C561934878A3A768AFAE68 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
-		800F2404CA09DD1304DBA202 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
-		8A19A368754544376F9A201A /* HWANGTODOControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWANGTODOControl.swift; sourceTree = "<group>"; };
+		72D141F271E282179508F6CF /* FocusIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusIntents.swift; sourceTree = "<group>"; };
+		784B37D1C83165FE93CBBD48 /* SettingsSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSurface.swift; sourceTree = "<group>"; };
+		843A42D9B79F42F7BA894162 /* CaptureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureControl.swift; sourceTree = "<group>"; };
+		86194E98AA0D562F6B7E6BF6 /* CaptureHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureHomeView.swift; sourceTree = "<group>"; };
 		8A66B37B67CDF0B000AC2CAF /* HWANGTODO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HWANGTODO.entitlements; sourceTree = "<group>"; };
-		8B6F86CFB6BCEBE0A8FE9BB4 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		902779077C178252133BCA22 /* CaptureIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureIntents.swift; sourceTree = "<group>"; };
-		909107F47F56D2681265B549 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		90774E94BD4AF329746387A2 /* CaptureFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFlowUITests.swift; sourceTree = "<group>"; };
 		9123032B6BD712C35B35511A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		965FD78C9032E060502037A1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		92E4CEE4BC6B82D11A514FB1 /* SettingsChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChecklistView.swift; sourceTree = "<group>"; };
+		9656FC5A35B4D028D9801439 /* SurfaceDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceDetailSheet.swift; sourceTree = "<group>"; };
 		978AC44EF9E1FEE3BCBC1298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1290A3D98C77162989C250A /* HWANGTODO.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HWANGTODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5757315E9AEA8C892D71873 /* GlanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceProvider.swift; sourceTree = "<group>"; };
+		A5DBF81E84EA572A7BADF27C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B0F0F21A2B9035B7DDDF01AF /* FocusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLiveActivity.swift; sourceTree = "<group>"; };
-		B5058B113D1487300834E216 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 		B9D7B71782AB35D58BDFE964 /* NavigationIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationIntents.swift; sourceTree = "<group>"; };
-		BB9BC0AB69D5CA2FEB0BD90A /* MatrixProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixProvider.swift; sourceTree = "<group>"; };
+		BCD3538573B5A881C99DCDC2 /* HWANGTODOKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HWANGTODOKit; path = Packages/HWANGTODOKit; sourceTree = SOURCE_ROOT; };
+		C10538432460EEC0AE508BFA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		C26C3399C7FBE6D81439D364 /* FocusSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSessionManager.swift; sourceTree = "<group>"; };
 		D026870F4F86591D102BECBF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D8EC8505CEC0B964D43E7E29 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		DB16A19CEC5DFF90E0DA6F0B /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		D9B8FE9DCEDFA38D0F6FAC3A /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		DE7A5087606D36B31DEBC704 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		DFE9010DC8B5FF0ED0ADCE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E119CB21BD5B62950F76E60B /* SurfaceChecklistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceChecklistRow.swift; sourceTree = "<group>"; };
 		E2CF8567E9324DA30D3FD064 /* QuadrantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantCard.swift; sourceTree = "<group>"; };
 		EE57C0B8965C99C71E31DD03 /* HWANGTODOWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HWANGTODOWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0C69BC7F571B5844E2E72F0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		F6B557A974D16F0B05F90FA4 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		F7E1D6D3E0C8DE500F16A371 /* HomeMatrixWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMatrixWidgets.swift; sourceTree = "<group>"; };
+		EF4F78D2110D93ADD06E3D61 /* WidgetIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetIntents.swift; sourceTree = "<group>"; };
+		F1FBB9B8F80F9BD4A0698C97 /* HWANGTODOUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HWANGTODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79B4308D2EF5130B2341D03 /* HomeWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWidgets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0957ECF5862628D7081776A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D74A66E850A9A32183B0CA /* HWANGTODOCore in Frameworks */,
+				DD2CDA06804D41C8CE4EE10E /* HWANGTODODesign in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2F8EE8789B6E5A62A371A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56D66B24A989E741BD5ACC3 /* HWANGTODOCore in Frameworks */,
+				12DFAC6CB2E1F49B33BB1AF2 /* HWANGTODODesign in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		016E98D046B1A9F79B0B7007 /* Matrix */ = {
@@ -144,68 +167,71 @@
 		0C195050EAFD84FB5213F497 = {
 			isa = PBXGroup;
 			children = (
+				527F2B354D2BE0C987167233 /* Packages */,
 				A2B676374F31CF3DFA2C19D1 /* Sources */,
+				695041DBC063BDF70F4B17B9 /* Tests */,
 				59ABBAF13A8DAD41031B09B3 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		325FB9EC6880A9C303C60069 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				DB16A19CEC5DFF90E0DA6F0B /* AppGroup.swift */,
-				800F2404CA09DD1304DBA202 /* ChatMessage.swift */,
-				4E46D4655A05F03E078DF863 /* Enums 2.swift */,
-				021B08CA58A1D799D032454F /* Enums.swift */,
-				5E061F5B4F9400F04F8BCCDC /* FocusActivityAttributes.swift */,
-				180757FE64A0DD7ED4B49FF0 /* MatrixTask.swift */,
-				0C3DEF4EDAB73196DD03E3BF /* Routine.swift */,
-				64A57791D9089978CC5031AD /* SampleDataSeeder.swift */,
-				1A6E267D2232174EB3C1BCBE /* TaskStore.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		3478E6D2D25BEA47FA8E6885 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				437D9EED63AA26DA61BC884C /* CalendarService.swift */,
-				06A51BF7F9B999D92E109355 /* ChatParser.swift */,
 				C26C3399C7FBE6D81439D364 /* FocusSessionManager.swift */,
 				D8EC8505CEC0B964D43E7E29 /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		3D8D909437C02DDEB3EABCD0 /* Components */ = {
+		527F2B354D2BE0C987167233 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				75C561934878A3A768AFAE68 /* TaskCardView.swift */,
+				BCD3538573B5A881C99DCDC2 /* HWANGTODOKit */,
 			);
-			path = Components;
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		59ABBAF13A8DAD41031B09B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				A1290A3D98C77162989C250A /* HWANGTODO.app */,
+				F1FBB9B8F80F9BD4A0698C97 /* HWANGTODOUITests.xctest */,
 				EE57C0B8965C99C71E31DD03 /* HWANGTODOWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A253E4EBCD865CA734E2170F /* DesignSystem */ = {
+		65C11BAF5E6103B2447FF11A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				965FD78C9032E060502037A1 /* Theme.swift */,
+				784B37D1C83165FE93CBBD48 /* SettingsSurface.swift */,
+				E119CB21BD5B62950F76E60B /* SurfaceChecklistRow.swift */,
+				9656FC5A35B4D028D9801439 /* SurfaceDetailSheet.swift */,
 			);
-			path = DesignSystem;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		695041DBC063BDF70F4B17B9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E494809ACE8EE52DB27EA6 /* UITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		77BDF6021F4D262D6AD32F2D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				50E55CC949C16F96793F869B /* TaskCardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A2B676374F31CF3DFA2C19D1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				DFE6F7B6B09381B23A01699A /* App */,
-				325FB9EC6880A9C303C60069 /* Shared */,
 				C8E70A76300B8D7E9812355B /* Widgets */,
 			);
 			path = Sources;
@@ -214,17 +240,20 @@
 		BAD63FECEB0EDA64F645B923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F0C69BC7F571B5844E2E72F0 /* CalendarView.swift */,
-				B5058B113D1487300834E216 /* CaptureView.swift */,
+				86194E98AA0D562F6B7E6BF6 /* CaptureHomeView.swift */,
+				325E03D6B1BB9DEE24E6ED8D /* CaptureSheetView.swift */,
 				3B1150AF0AC2622056808E29 /* ChatView.swift */,
 				007779A61577D2AC20EC95E5 /* FocusView.swift */,
-				909107F47F56D2681265B549 /* InboxView.swift */,
 				D026870F4F86591D102BECBF /* OnboardingView.swift */,
 				4FEE76CAA522D4CCDE46566A /* OrganizeSheet.swift */,
 				DE7A5087606D36B31DEBC704 /* RootTabView.swift */,
-				73DDE4C079EF1EE762E3921E /* RoutineView.swift */,
-				8B6F86CFB6BCEBE0A8FE9BB4 /* SetupView.swift */,
+				2970E1B699BAD63714DBA781 /* RoutineListView.swift */,
+				D9B8FE9DCEDFA38D0F6FAC3A /* ScheduleView.swift */,
+				92E4CEE4BC6B82D11A514FB1 /* SettingsChecklistView.swift */,
+				65BC719CBC90770761D875BF /* TaskDetailView.swift */,
+				77BDF6021F4D262D6AD32F2D /* Components */,
 				016E98D046B1A9F79B0B7007 /* Matrix */,
+				65C11BAF5E6103B2447FF11A /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,14 +261,16 @@
 		C8E70A76300B8D7E9812355B /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				843A42D9B79F42F7BA894162 /* CaptureControl.swift */,
 				B0F0F21A2B9035B7DDDF01AF /* FocusLiveActivity.swift */,
-				F7E1D6D3E0C8DE500F16A371 /* HomeMatrixWidgets.swift */,
-				8A19A368754544376F9A201A /* HWANGTODOControl.swift */,
+				A5757315E9AEA8C892D71873 /* GlanceProvider.swift */,
+				F79B4308D2EF5130B2341D03 /* HomeWidgets.swift */,
 				15EB821AEC53A21220E9AC51 /* HWANGTODOWidgetBundle.swift */,
 				27E86043EF1385C75BF4485E /* HWANGTODOWidgets.entitlements */,
 				DFE9010DC8B5FF0ED0ADCE6C /* Info.plist */,
 				5B58443774052D9A8672B857 /* LockScreenWidgets.swift */,
-				BB9BC0AB69D5CA2FEB0BD90A /* MatrixProvider.swift */,
+				A5DBF81E84EA572A7BADF27C /* PrivacyInfo.xcprivacy */,
+				EF4F78D2110D93ADD06E3D61 /* WidgetIntents.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -248,12 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				9123032B6BD712C35B35511A /* AppRouter.swift */,
+				08AF9048BD8710E018ACC51C /* Assets.xcassets */,
 				8A66B37B67CDF0B000AC2CAF /* HWANGTODO.entitlements */,
 				3B349B381157A6BADE8E88D6 /* HWANGTODOApp.swift */,
 				978AC44EF9E1FEE3BCBC1298 /* Info.plist */,
-				F6B557A974D16F0B05F90FA4 /* TaskModel.swift */,
-				3D8D909437C02DDEB3EABCD0 /* Components */,
-				A253E4EBCD865CA734E2170F /* DesignSystem */,
+				C10538432460EEC0AE508BFA /* PrivacyInfo.xcprivacy */,
 				EA2E97EDC9297DB3182C4C9E /* Intents */,
 				3478E6D2D25BEA47FA8E6885 /* Services */,
 				BAD63FECEB0EDA64F645B923 /* Views */,
@@ -261,10 +291,20 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E1E494809ACE8EE52DB27EA6 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				90774E94BD4AF329746387A2 /* CaptureFlowUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		EA2E97EDC9297DB3182C4C9E /* Intents */ = {
 			isa = PBXGroup;
 			children = (
+				47E11B1F9E4627ADAB52B273 /* AppShortcuts.swift */,
 				902779077C178252133BCA22 /* CaptureIntents.swift */,
+				72D141F271E282179508F6CF /* FocusIntents.swift */,
 				B9D7B71782AB35D58BDFE964 /* NavigationIntents.swift */,
 			);
 			path = Intents;
@@ -278,6 +318,8 @@
 			buildConfigurationList = D1EEEC8508AD43C796C45C23 /* Build configuration list for PBXNativeTarget "HWANGTODOWidgets" */;
 			buildPhases = (
 				158C531F022CE6507A11144B /* Sources */,
+				8C8D82E886643A9BAAE7B99C /* Resources */,
+				0957ECF5862628D7081776A7 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +327,8 @@
 			);
 			name = HWANGTODOWidgets;
 			packageProductDependencies = (
+				A3350B988703452479B8A7E8 /* HWANGTODOCore */,
+				E0FDBB4D7B5AF7B53AD4B516 /* HWANGTODODesign */,
 			);
 			productName = HWANGTODOWidgets;
 			productReference = EE57C0B8965C99C71E31DD03 /* HWANGTODOWidgets.appex */;
@@ -295,6 +339,8 @@
 			buildConfigurationList = AA9EB44B74753DAC6FF4B293 /* Build configuration list for PBXNativeTarget "HWANGTODO" */;
 			buildPhases = (
 				8845D00C50C15160FBE7DA85 /* Sources */,
+				D2C268537D7757E6B9F35A9D /* Resources */,
+				CC2F8EE8789B6E5A62A371A3 /* Frameworks */,
 				6256B447BCBEAA80DEE7A4AE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -304,10 +350,30 @@
 			);
 			name = HWANGTODO;
 			packageProductDependencies = (
+				743A5EFDBF1424277DAC5084 /* HWANGTODOCore */,
+				53D5625AEF4117F80D925665 /* HWANGTODODesign */,
 			);
 			productName = HWANGTODO;
 			productReference = A1290A3D98C77162989C250A /* HWANGTODO.app */;
 			productType = "com.apple.product-type.application";
+		};
+		99A2338A6D244B818715BED3 /* HWANGTODOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C041B808CF30283BC67D174E /* Build configuration list for PBXNativeTarget "HWANGTODOUITests" */;
+			buildPhases = (
+				76B32CD20A01355DB490868C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76C197AD45CE0A8F87893DBA /* PBXTargetDependency */,
+			);
+			name = HWANGTODOUITests;
+			packageProductDependencies = (
+			);
+			productName = HWANGTODOUITests;
+			productReference = F1FBB9B8F80F9BD4A0698C97 /* HWANGTODOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -324,6 +390,10 @@
 					87EF04BFCCAEB019224EA0FC = {
 						ProvisioningStyle = Manual;
 					};
+					99A2338A6D244B818715BED3 = {
+						ProvisioningStyle = Manual;
+						TestTargetID = 87EF04BFCCAEB019224EA0FC;
+					};
 				};
 			};
 			buildConfigurationList = 11ACFA1DC2F5899B9A8AB140 /* Build configuration list for PBXProject "HWANGTODO" */;
@@ -335,37 +405,61 @@
 			);
 			mainGroup = 0C195050EAFD84FB5213F497;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F978E924E2613F6C1601D24 /* XCLocalSwiftPackageReference "Packages/HWANGTODOKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 59ABBAF13A8DAD41031B09B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				87EF04BFCCAEB019224EA0FC /* HWANGTODO */,
+				99A2338A6D244B818715BED3 /* HWANGTODOUITests */,
 				08F3E0D3AA881880CB9E6A7A /* HWANGTODOWidgets */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C8D82E886643A9BAAE7B99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E3F5EA9231F2F568F6584C /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C268537D7757E6B9F35A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA380C10049315840FA10EEF /* Assets.xcassets in Resources */,
+				339E1C0BB35CCDFC6B551A0B /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		158C531F022CE6507A11144B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58CA3E0BCCAAD024A1240E6A /* AppGroup.swift in Sources */,
-				C38D5FCC2125D5E6B83B3FCC /* ChatMessage.swift in Sources */,
-				5331D3044E0843CA9232D3B7 /* Enums 2.swift in Sources */,
-				8BABB23DEE0934D76863FD26 /* Enums.swift in Sources */,
-				E8E559A138573F8EF81A5BE8 /* FocusActivityAttributes.swift in Sources */,
+				2C6F0DF47D5A4A12774FB096 /* CaptureControl.swift in Sources */,
 				23DC9E595F2567EF3A7BB4D8 /* FocusLiveActivity.swift in Sources */,
-				39E6F6F7E74F72092D607902 /* HWANGTODOControl.swift in Sources */,
+				CD274ED316513A65F969D6A5 /* GlanceProvider.swift in Sources */,
 				938EFBAD24A53A4D1C253B24 /* HWANGTODOWidgetBundle.swift in Sources */,
-				7037576CF0DB31D32E6951FC /* HomeMatrixWidgets.swift in Sources */,
+				593F4071FB92E2D5B2065E90 /* HomeWidgets.swift in Sources */,
 				8135D77ACCCCAFF4540E0112 /* LockScreenWidgets.swift in Sources */,
-				CA91CF22B4A62FE43EB0D97B /* MatrixProvider.swift in Sources */,
-				011A7568558C8E037014696D /* MatrixTask.swift in Sources */,
-				96BC0E80355044FDFD1C7952 /* Routine.swift in Sources */,
-				F42D5F9C50EC5643C42FDD79 /* SampleDataSeeder.swift in Sources */,
-				C0FBDF1E17F6B74D164C5DFB /* TaskStore.swift in Sources */,
+				D92642D309E082D8A86390FB /* WidgetIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B32CD20A01355DB490868C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2F88FE8D0E4264BD67A6C6 /* CaptureFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,23 +467,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C9F4577F68F613E05C71444 /* AppGroup.swift in Sources */,
 				293250BD27824F728E48C11F /* AppRouter.swift in Sources */,
+				246D51811E643C9F8FE3CC03 /* AppShortcuts.swift in Sources */,
 				F04ECAE32DA6F917778262B3 /* CalendarService.swift in Sources */,
-				C32F4F6CF618DAB2E3468AC1 /* CalendarView.swift in Sources */,
+				5A05D044E6F706860625D27C /* CaptureHomeView.swift in Sources */,
 				0C6C2A1224E065CE6EA3B9BA /* CaptureIntents.swift in Sources */,
-				2FDEA276057D62FD8632DD72 /* CaptureView.swift in Sources */,
-				040BA13018355B86D5721AD4 /* ChatMessage.swift in Sources */,
-				6B557FD242CEDD1B27CE6290 /* ChatParser.swift in Sources */,
+				0C5F1A086438465DF0EE6DD5 /* CaptureSheetView.swift in Sources */,
 				848F630E88B0E2224714D0E6 /* ChatView.swift in Sources */,
-				82C6AA2F7ECB593303AD1C2F /* Enums 2.swift in Sources */,
-				194EBB7E9C73F9516E9DD9AC /* Enums.swift in Sources */,
-				F05ED9EFFAD91C4EF60C2AB3 /* FocusActivityAttributes.swift in Sources */,
+				C87A7F6131FAF707B95A646E /* FocusIntents.swift in Sources */,
 				94306BA0916FB970519EB180 /* FocusSessionManager.swift in Sources */,
 				60B0FC194AB4630FBA7BD0BB /* FocusView.swift in Sources */,
 				0E1F65CEEAFA1AE74B899C49 /* HWANGTODOApp.swift in Sources */,
-				AE2B8EBBF1E3CBF1E2CBDEBE /* InboxView.swift in Sources */,
-				959BDF293781F74C8E09103A /* MatrixTask.swift in Sources */,
 				283424C193D2418CFE9BAECF /* MatrixView.swift in Sources */,
 				04141AFFC263A6588756F29B /* NavigationIntents.swift in Sources */,
 				C53D525AC833AEF2B3B6D5AC /* NotificationManager.swift in Sources */,
@@ -398,14 +486,14 @@
 				F3DCC91AC304C5FEDE2E7733 /* QuadrantCard.swift in Sources */,
 				1773494E55D97AC895155F23 /* QuadrantDetailView.swift in Sources */,
 				93430B82A52E611AAEC0DC3A /* RootTabView.swift in Sources */,
-				46AF3D8EBD6A1EDB1C93F710 /* Routine.swift in Sources */,
-				977B8B13727149449F9FB4CD /* RoutineView.swift in Sources */,
-				7CBE2AE4ECAC949819E6B296 /* SampleDataSeeder.swift in Sources */,
-				03FC22AD7F24547ABFC125FC /* SetupView.swift in Sources */,
-				CB9584ACD233A639C7A8FD48 /* TaskCardView.swift in Sources */,
-				B2C2AA6D01AB27734F58367A /* TaskModel.swift in Sources */,
-				6A71AEBEA9246CE54C8859CB /* TaskStore.swift in Sources */,
-				BDBFFC869545C93037618BEF /* Theme.swift in Sources */,
+				8B40EC799673D11C0532421C /* RoutineListView.swift in Sources */,
+				EDD19B86BE5166F3E654BFB6 /* ScheduleView.swift in Sources */,
+				FAE77390BB455C2C7F9F1F22 /* SettingsChecklistView.swift in Sources */,
+				301DE22467B4DFC757D7B29D /* SettingsSurface.swift in Sources */,
+				FD9D26F49318A022F72E58E1 /* SurfaceChecklistRow.swift in Sources */,
+				D66E86C77AF51880FBE7F043 /* SurfaceDetailSheet.swift in Sources */,
+				24DF41B811B124E7390206C4 /* TaskCardView.swift in Sources */,
+				47E23C0B6342260C7839BC7D /* TaskDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +505,32 @@
 			target = 08F3E0D3AA881880CB9E6A7A /* HWANGTODOWidgets */;
 			targetProxy = 9AA68A4367F17C1042446FA6 /* PBXContainerItemProxy */;
 		};
+		76C197AD45CE0A8F87893DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87EF04BFCCAEB019224EA0FC /* HWANGTODO */;
+			targetProxy = 02095E97571A46C09148FA1E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		01C47BE8ACAB699FF1FBD397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwangtodo.app.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HWANGTODO;
+			};
+			name = Debug;
+		};
 		037877EE3FBF95676C39DE25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,6 +570,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -474,8 +586,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = xml;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -483,8 +595,11 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -502,6 +617,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hwangtodo.app.widgets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -510,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sources/App/HWANGTODO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Sources/App/Info.plist;
@@ -523,10 +640,29 @@
 			};
 			name = Release;
 		};
+		843D0FA7FCE6832BA5A56B65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwangtodo.app.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HWANGTODO;
+			};
+			name = Release;
+		};
 		8FE4D86A8D7C947A9F901551 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sources/App/HWANGTODO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Sources/App/Info.plist;
@@ -553,6 +689,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hwangtodo.app.widgets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -596,6 +733,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -605,16 +743,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = xml;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -640,6 +781,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		C041B808CF30283BC67D174E /* Build configuration list for PBXNativeTarget "HWANGTODOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C47BE8ACAB699FF1FBD397 /* Debug */,
+				843D0FA7FCE6832BA5A56B65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		D1EEEC8508AD43C796C45C23 /* Build configuration list for PBXNativeTarget "HWANGTODOWidgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -650,6 +800,32 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9F978E924E2613F6C1601D24 /* XCLocalSwiftPackageReference "Packages/HWANGTODOKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/HWANGTODOKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53D5625AEF4117F80D925665 /* HWANGTODODesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HWANGTODODesign;
+		};
+		743A5EFDBF1424277DAC5084 /* HWANGTODOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HWANGTODOCore;
+		};
+		A3350B988703452479B8A7E8 /* HWANGTODOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HWANGTODOCore;
+		};
+		E0FDBB4D7B5AF7B53AD4B516 /* HWANGTODODesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HWANGTODODesign;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5E69484661A7DCF23EB1773 /* Project object */;
 }

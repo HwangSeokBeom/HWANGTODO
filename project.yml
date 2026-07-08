@@ -1,16 +1,32 @@
+# HWANGTODO — project definition (source of truth; run `make gen` after edits).
+#
+# State-of-the-art July 2026 baseline:
+#   * iOS 26.0 minimum — Liquid Glass system UI, Tab builder, interactive
+#     widgets/Live Activities, ControlWidget without availability guards.
+#   * Swift 6 language mode + Approachable Concurrency + MainActor-by-default.
+#   * Shared logic/design live in the local package Packages/HWANGTODOKit.
 name: HWANGTODO
 options:
   bundleIdPrefix: com.hwangtodo
   deploymentTarget:
-    iOS: "17.0"
+    iOS: "26.0"
   createIntermediateGroups: true
+
+packages:
+  HWANGTODOKit:
+    path: Packages/HWANGTODOKit
+
 settings:
   base:
-    MARKETING_VERSION: "0.2"
+    MARKETING_VERSION: "1.0"
     CURRENT_PROJECT_VERSION: "1"
-    SWIFT_VERSION: "5.0"
+    SWIFT_VERSION: "6.0"
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_STRICT_CONCURRENCY: complete
     TARGETED_DEVICE_FAMILY: "1,2"
     INFOPLIST_OUTPUT_FORMAT: xml
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
     # Manual signing so the App Group entitlement is applied verbatim. Automatic
     # signing with no team strips App Groups (empty profile intersection), and
     # CODE_SIGNING_REQUIRED=NO sets ENTITLEMENTS_ALLOWED=NO which strips them too.
@@ -24,46 +40,82 @@ targets:
     platform: iOS
     sources:
       - path: Sources/App
-      - path: Sources/Shared
     dependencies:
       - target: HWANGTODOWidgets
+      - package: HWANGTODOKit
+        products:
+          - HWANGTODOCore
+          - HWANGTODODesign
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.hwangtodo.app
         CODE_SIGN_ENTITLEMENTS: Sources/App/HWANGTODO.entitlements
-    scheme: {}
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    scheme:
+      testTargets:
+        - package: HWANGTODOKit/HWANGTODOCoreTests
+        - HWANGTODOUITests
     info:
       path: Sources/App/Info.plist
       properties:
         CFBundleDisplayName: HWANGTODO
+        CFBundleDevelopmentRegion: ko
+        LSApplicationCategoryType: public.app-category.productivity
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         NSSupportsLiveActivities: true
-        NSCalendarsUsageDescription: "HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask."
-        NSCalendarsFullAccessUsageDescription: "HWANGTODO links tasks to calendar events and shows today's blocks. Events are only created when you ask."
+        NSSupportsLiveActivitiesFrequentUpdates: true
+        NSCalendarsFullAccessUsageDescription: "할 일을 캘린더 일정으로 만들고 오늘 일정을 보여 드리기 위해 캘린더 접근이 필요해요. 일정은 요청할 때만 만들어져요."
+        NSCalendarsWriteOnlyAccessUsageDescription: "할 일을 캘린더 일정으로 만들 때만 캘린더에 기록해요."
         CFBundleURLTypes:
           - CFBundleURLName: com.hwangtodo.app
             CFBundleURLSchemes:
               - hwangtodo
+
+  HWANGTODOUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: Tests/UITests
+    dependencies:
+      - target: HWANGTODO
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hwangtodo.app.uitests
+        TEST_TARGET_NAME: HWANGTODO
+        GENERATE_INFOPLIST_FILE: YES
+        # XCTestCase lifecycle overrides are nonisolated; XCTest already runs
+        # test bodies on the main thread.
+        SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
 
   HWANGTODOWidgets:
     type: app-extension
     platform: iOS
     sources:
       - path: Sources/Widgets
-      - path: Sources/Shared
+    dependencies:
+      - package: HWANGTODOKit
+        products:
+          - HWANGTODOCore
+          - HWANGTODODesign
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.hwangtodo.app.widgets
         CODE_SIGN_ENTITLEMENTS: Sources/Widgets/HWANGTODOWidgets.entitlements
         SKIP_INSTALL: YES
+        # WidgetKit providers and intents run off the main actor; keep the
+        # extension nonisolated-by-default and hop to MainActor explicitly.
+        SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
     scheme: {}
     info:
       path: Sources/Widgets/Info.plist
       properties:
         CFBundleDisplayName: HWANGTODO
+        CFBundleDevelopmentRegion: ko
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
