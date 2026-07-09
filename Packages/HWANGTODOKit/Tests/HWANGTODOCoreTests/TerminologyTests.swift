@@ -12,11 +12,11 @@ import Testing
 struct TerminologyTests {
     /// Banned words, assembled at runtime so this file itself never contains
     /// them as contiguous literals.
-    private nonisolated static let bannedWords = ["받은" + "함", "보관" + "함"]
+    nonisolated private static let bannedWords = ["받은" + "함", "보관" + "함"]
 
     /// Repo root derived from this file's location:
     /// …/Packages/HWANGTODOKit/Tests/HWANGTODOCoreTests/TerminologyTests.swift
-    private nonisolated static let repoRoot = URL(fileURLWithPath: #filePath)
+    nonisolated private static let repoRoot = URL(fileURLWithPath: #filePath)
         .deletingLastPathComponent() // HWANGTODOCoreTests
         .deletingLastPathComponent() // Tests
         .deletingLastPathComponent() // HWANGTODOKit

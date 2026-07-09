@@ -2,18 +2,18 @@ import AppIntents
 import Foundation
 import HWANGTODOCore
 
-/// 집중 세션을 움직이는 인텐트들 — 앱 프로세스에서 실행.
-///
-/// `LiveActivityIntent` conformance makes the system run `perform()` in the
-/// app's process, where `FocusSessionManager`'s in-memory queue lives — the
-/// only place the session can actually advance.
-///
-/// Note: the Live Activity's on-screen buttons do NOT reference these types.
-/// The widget extension cannot see app-target code, so its buttons use the
-/// widget-process intents in `Sources/Widgets/FocusLiveActivity.swift`
-/// (store write + shared-defaults 다음 marker) and the app reconciles via
-/// `FocusSessionManager.attach(repository:)` on foreground. These intents
-/// exist for 단축어 automation ("집중 완료" 등) while a session is running.
+// 집중 세션을 움직이는 인텐트들 — 앱 프로세스에서 실행.
+//
+// `LiveActivityIntent` conformance makes the system run `perform()` in the
+// app's process, where `FocusSessionManager`'s in-memory queue lives — the
+// only place the session can actually advance.
+//
+// Note: the Live Activity's on-screen buttons do NOT reference these types.
+// The widget extension cannot see app-target code, so its buttons use the
+// widget-process intents in `Sources/Widgets/FocusLiveActivity.swift`
+// (store write + shared-defaults 다음 marker) and the app reconciles via
+// `FocusSessionManager.attach(repository:)` on foreground. These intents
+// exist for 단축어 automation ("집중 완료" 등) while a session is running.
 
 // MARK: - 완료
 

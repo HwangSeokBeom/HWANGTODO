@@ -238,6 +238,7 @@ struct CaptureSheetView: View {
 
 #if DEBUG
 #Preview("빠른 입력") {
+    // swiftlint:disable:next force_try
     let container = try! ModelContainer(
         for: SharedStore.schema,
         configurations: [ModelConfiguration(isStoredInMemoryOnly: true)]

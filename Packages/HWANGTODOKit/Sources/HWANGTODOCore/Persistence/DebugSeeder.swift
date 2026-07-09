@@ -20,7 +20,10 @@ public enum DebugSeeder {
         let today9 = calendar.date(bySettingHour: 9, minute: 0, second: 0, of: .now)
 
         let items: [TodoItem] = [
-            TodoItem(title: "회의 자료 마무리", status: .active, quadrant: .urgentImportant, dueDate: today9, source: .app, isPinned: true),
+            TodoItem(
+                title: "회의 자료 마무리", status: .active, quadrant: .urgentImportant,
+                dueDate: today9, source: .app, isPinned: true
+            ),
             TodoItem(title: "은행 서류 제출", status: .active, quadrant: .urgentImportant, dueDate: today9, source: .siri),
             TodoItem(title: "운동 계획 세우기", status: .active, quadrant: .importantNotUrgent, source: .homeWidget),
             TodoItem(title: "책 반납하기", status: .active, quadrant: .urgentNotImportant, source: .actionButton),

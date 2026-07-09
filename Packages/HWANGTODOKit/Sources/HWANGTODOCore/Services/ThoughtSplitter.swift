@@ -8,7 +8,7 @@ import Foundation
 /// Canonical example (spec §12):
 ///   "오늘 업무일지 쓰고, 캘린더 확인하고, 엄마한테 전화해야 함"
 ///   → ["업무일지 쓰기", "캘린더 확인하기", "엄마한테 전화하기"]
-public nonisolated enum ThoughtSplitter {
+nonisolated public enum ThoughtSplitter {
     /// Splits free-form text into cleaned task candidates. Deduplicates while
     /// preserving order; drops fragments shorter than 2 characters.
     public static func candidates(from text: String) -> [String] {

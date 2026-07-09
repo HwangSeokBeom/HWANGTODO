@@ -4,8 +4,8 @@ import Foundation
 
 /// Live Matrix — the Live Activity showing the task currently in focus on the
 /// lock screen and in the Dynamic Island (spec §7).
-public nonisolated struct FocusActivityAttributes: ActivityAttributes, Sendable {
-    public nonisolated struct ContentState: Codable, Hashable, Sendable {
+nonisolated public struct FocusActivityAttributes: ActivityAttributes, Sendable {
+    nonisolated public struct ContentState: Codable, Hashable, Sendable {
         /// The task in focus (deep-link target — spec §7 "정확한 할 일로 이동").
         public var taskID: UUID
         public var title: String

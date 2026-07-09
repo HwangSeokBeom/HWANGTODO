@@ -5,7 +5,7 @@ import Foundation
 /// Banned words — never user-facing anywhere: 받은함, 보관함, Inbox, Archive,
 /// AI 분석, Dashboard, Task Manager, System Surface.
 /// A unit test scans all sources for the banned list.
-public nonisolated enum Terminology {
+nonisolated public enum Terminology {
     // Tabs (spec §4)
     public static let tabCapture = "기록"
     public static let tabOrganize = "정리"

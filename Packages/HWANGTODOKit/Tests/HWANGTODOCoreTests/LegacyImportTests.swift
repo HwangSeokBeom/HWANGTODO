@@ -12,7 +12,7 @@ import Testing
 struct LegacyImportTests {
     /// Frozen persisted key — the importer's once-per-install marker.
     /// Renaming it in source would re-import on every user's next launch.
-    private nonisolated static let completedFlag = "legacyJSONImportCompleted_v1"
+    nonisolated private static let completedFlag = "legacyJSONImportCompleted_v1"
 
     /// Per-test sandbox: unique base dir + unique defaults suite + fresh store.
     private struct Sandbox {
@@ -56,13 +56,13 @@ struct LegacyImportTests {
 
     // MARK: - Fixtures (legacy on-disk shapes, iso8601 dates)
 
-    private nonisolated static let knownTaskID = "11111111-1111-1111-1111-111111111111"
-    private nonisolated static let unknownRawTaskID = "22222222-2222-2222-2222-222222222222"
-    private nonisolated static let routineID = "33333333-3333-3333-3333-333333333333"
-    private nonisolated static let chatWithConversionsID = "44444444-4444-4444-4444-444444444444"
-    private nonisolated static let chatMinimalID = "55555555-5555-5555-5555-555555555555"
+    nonisolated private static let knownTaskID = "11111111-1111-1111-1111-111111111111"
+    nonisolated private static let unknownRawTaskID = "22222222-2222-2222-2222-222222222222"
+    nonisolated private static let routineID = "33333333-3333-3333-3333-333333333333"
+    nonisolated private static let chatWithConversionsID = "44444444-4444-4444-4444-444444444444"
+    nonisolated private static let chatMinimalID = "55555555-5555-5555-5555-555555555555"
 
-    private nonisolated static let tasksJSON = """
+    nonisolated private static let tasksJSON = """
     [
         {
             "id": "\(knownTaskID)",
@@ -92,7 +92,7 @@ struct LegacyImportTests {
     ]
     """
 
-    private nonisolated static let routinesJSON = """
+    nonisolated private static let routinesJSON = """
     [
         {
             "id": "\(routineID)",
@@ -104,7 +104,7 @@ struct LegacyImportTests {
     ]
     """
 
-    private nonisolated static let chatJSON = """
+    nonisolated private static let chatJSON = """
     [
         {
             "id": "\(chatWithConversionsID)",

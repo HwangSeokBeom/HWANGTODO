@@ -146,7 +146,10 @@ struct OnboardingView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, Theme.Spacing.m)
-                .background(quadrant.accent.opacity(0.10), in: RoundedRectangle(cornerRadius: Theme.Radius.chip, style: .continuous))
+                .background(
+                    quadrant.accent.opacity(0.10),
+                    in: RoundedRectangle(cornerRadius: Theme.Radius.chip, style: .continuous)
+                )
             }
         }
         .frame(maxWidth: 420)

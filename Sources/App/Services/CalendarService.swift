@@ -150,7 +150,8 @@ final class CalendarService {
         repository.schedule(item, at: startDate)
         reloadEventCaches()
         storeVersion += 1
-        log.info("calendar event \(existing == nil ? "created" : "updated", privacy: .public) for task \(item.id.uuidString, privacy: .public)")
+        let action = existing == nil ? "created" : "updated"
+        log.info("calendar event \(action, privacy: .public) for task \(item.id.uuidString, privacy: .public)")
     }
 
     /// Forgets the task↔event link. The event itself is left untouched —

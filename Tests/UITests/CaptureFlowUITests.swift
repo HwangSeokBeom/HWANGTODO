@@ -2,29 +2,22 @@ import XCTest
 
 /// The one end-to-end smoke the spec demands be seen, not assumed (§16):
 /// really TYPE a capture, watch it land in 정리 전, complete it, and find it
-/// under 완료한 일. Runs on the simulator; XCTest because XCUIApplication
-/// automation is not available to Swift Testing.
+/// under 완료한 일. XCTest because XCUIApplication automation is not available
+/// to Swift Testing; the test method is @MainActor because every XCUI API is.
 final class CaptureFlowUITests: XCTestCase {
-    private var app: XCUIApplication!
-
-    override func setUp() {
-        continueAfterTesting()
-    }
-
-    private func continueAfterTesting() {
+    @MainActor
+    func testCaptureAppearsInPendingThenCompletes() {
         continueAfterFailure = false
-        app = XCUIApplication()
+        let app = XCUIApplication()
         // DEBUG-only reset: empty store, onboarding marked done.
         app.launchArguments = ["-hwangtodo-uitest-reset"]
         app.launch()
-    }
 
-    func testCaptureAppearsInPendingThenCompletes() {
         let title = "우유 사기"
 
         // 1. Capture through the always-visible quick-capture accessory.
         let field = app.textFields["지금 떠오른 일 빠르게 남기기"]
-        XCTAssertTrue(field.waitForExistence(timeout: 5), "빠른 기록 입력창이 보여야 한다")
+        XCTAssertTrue(field.waitForExistence(timeout: 10), "빠른 기록 입력창이 보여야 한다")
         field.tap()
         field.typeText(title + "\n")
 

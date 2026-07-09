@@ -2,12 +2,12 @@ import AppIntents
 import Foundation
 import HWANGTODOCore
 
-/// 앱을 열어 특정 화면으로 이동하는 인텐트들.
-///
-/// These run in the app process (`openAppWhenRun = true` foregrounds the app
-/// before `perform()`), so they navigate through `AppRouter.current` directly
-/// instead of a URL round-trip. `AppRouter.current` is set in `App.init`,
-/// which always precedes `perform()`.
+// 앱을 열어 특정 화면으로 이동하는 인텐트들.
+//
+// These run in the app process (`openAppWhenRun = true` foregrounds the app
+// before `perform()`), so they navigate through `AppRouter.current` directly
+// instead of a URL round-trip. `AppRouter.current` is set in `App.init`,
+// which always precedes `perform()`.
 
 // MARK: - 빠른 기록 열기
 

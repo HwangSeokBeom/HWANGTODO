@@ -145,7 +145,11 @@ struct SurfaceDetailSheet: View {
             }
             secondaryButton("설정 열기", systemImage: "gear") { openSystemSettings() }
             // iOS 제약 정직 안내 (spec §6.2): 지정 여부는 앱이 알 수 없다.
-            honestNote("iOS는 액션 버튼에 어떤 기능이 연결됐는지 앱에게 알려주지 않아요. 그래서 여기서는 항상 \u{201C}확인 필요\u{201D}로 보여요. 설정 열기를 누르면 설정 앱으로 이동하니, 첫 화면에서 \u{201C}액션 버튼\u{201D}을 찾아 주세요.")
+            honestNote(
+                "iOS는 액션 버튼에 어떤 기능이 연결됐는지 앱에게 알려주지 않아요. "
+                    + "그래서 여기서는 항상 \u{201C}확인 필요\u{201D}로 보여요. "
+                    + "설정 열기를 누르면 설정 앱으로 이동하니, 첫 화면에서 \u{201C}액션 버튼\u{201D}을 찾아 주세요."
+            )
         }
     }
 
@@ -226,7 +230,11 @@ struct SurfaceDetailSheet: View {
         VStack(alignment: .leading, spacing: Theme.Spacing.m) {
             // spec §9: 캘린더 연동은 실제 생산성 기능처럼 동작해야 한다.
             card {
-                bodyText("할 일에 날짜를 잡으면 Apple 캘린더 이벤트로 만들 수 있어요. 만든 이벤트는 할 일과 연결되고, 일정 화면에서 함께 보여요. 캘린더에서 이벤트가 지워져도 할 일은 안전하게 남아요.")
+                bodyText(
+                    "할 일에 날짜를 잡으면 Apple 캘린더 이벤트로 만들 수 있어요. "
+                        + "만든 이벤트는 할 일과 연결되고, 일정 화면에서 함께 보여요. "
+                        + "캘린더에서 이벤트가 지워져도 할 일은 안전하게 남아요."
+                )
             }
             switch state {
             case .needsSetup:
