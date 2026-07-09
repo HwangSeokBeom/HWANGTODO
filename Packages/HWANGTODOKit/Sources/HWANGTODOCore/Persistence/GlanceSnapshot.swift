@@ -78,10 +78,16 @@ nonisolated public struct GlanceSnapshot: Sendable, Hashable {
         ],
         topTasks: [
             .urgentImportant: [
-                TaskSummary(id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant, isDueToday: true, hasCalendarEvent: true),
+                TaskSummary(
+                    id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant,
+                    isDueToday: true, hasCalendarEvent: true
+                ),
             ],
             .importantNotUrgent: [
-                TaskSummary(id: UUID(), title: "운동 계획 세우기", quadrant: .importantNotUrgent, isDueToday: false, hasCalendarEvent: false),
+                TaskSummary(
+                    id: UUID(), title: "운동 계획 세우기", quadrant: .importantNotUrgent,
+                    isDueToday: false, hasCalendarEvent: false
+                ),
             ],
         ],
         inboxCount: 2,
@@ -147,7 +153,9 @@ public extension GlanceSnapshot {
             routineTodayTotal: routines.count,
             routineTodayDone: routinesDone.count,
             nextTask: next.map { summary(of: $0, calendar: calendar, now: now) },
-            calendarLinkedToday: dueToday.filter(\.hasCalendarEvent).prefix(3)
+            calendarLinkedToday: dueToday
+                .filter(\.hasCalendarEvent)
+                .prefix(3)
                 .map { summary(of: $0, calendar: calendar, now: now) }
         )
     }
