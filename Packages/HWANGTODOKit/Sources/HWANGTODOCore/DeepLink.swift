@@ -3,7 +3,7 @@ import Foundation
 /// Typed deep links. Widgets, notifications, Live Activities, and controls
 /// build URLs from here; `AppRouter` parses them back. URL hosts are frozen —
 /// they live inside placed widgets and scheduled notifications.
-public nonisolated enum DeepLink: Equatable, Sendable {
+nonisolated public enum DeepLink: Equatable, Sendable {
     /// 기록 tab; optionally landing on the 완료한 일 segment.
     case captureHome(showCompleted: Bool = false)
     /// 정리 tab; optionally focused on one quadrant.

@@ -465,7 +465,7 @@ final class NotificationManager {
 /// The one `UNUserNotificationCenterDelegate`. Deliberately `nonisolated`:
 /// the system may call it off the main thread, so each callback extracts
 /// Sendable values and hops to the MainActor manager.
-private nonisolated final class NotificationResponder: NSObject, UNUserNotificationCenterDelegate {
+nonisolated private final class NotificationResponder: NSObject, UNUserNotificationCenterDelegate {
     /// Foreground delivery still shows banner + sound (spec §6.7 reliability).
     func userNotificationCenter(
         _ center: UNUserNotificationCenter,

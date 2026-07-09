@@ -3,7 +3,7 @@ import Foundation
 /// Shared constants used across the app, the widget extension, and AppIntents.
 /// The App Group is what lets every system surface read/write the SAME store —
 /// no split-brain between widget data, intent data, and app data.
-public nonisolated enum AppGroup {
+nonisolated public enum AppGroup {
     /// Must match the App Group entitlement on both the app and widget targets.
     public static let identifier = "group.com.hwangtodo.shared"
 
@@ -19,7 +19,7 @@ public nonisolated enum AppGroup {
 
 /// Stable WidgetKit kind strings. Changing one removes the widget from users'
 /// Home/Lock Screens, so these are frozen — never rename.
-public nonisolated enum WidgetKind {
+nonisolated public enum WidgetKind {
     public static let homeSmall = "HWANGTODOHomeSmall"
     public static let homeMedium = "HWANGTODOHomeMedium"
     public static let homeLarge = "HWANGTODOHomeLarge"

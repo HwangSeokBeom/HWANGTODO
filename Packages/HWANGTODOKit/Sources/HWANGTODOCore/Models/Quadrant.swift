@@ -6,7 +6,7 @@ import Foundation
 ///
 /// Raw values are frozen: they live in the on-disk store, deep-link URLs, and
 /// widget configurations.
-public nonisolated enum Quadrant: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
+nonisolated public enum Quadrant: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
     case urgentImportant
     case importantNotUrgent
     case urgentNotImportant

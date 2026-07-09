@@ -506,9 +506,15 @@ private enum SchedulePreviewData {
         let inTwoWeeks = calendar.date(byAdding: .day, value: 14, to: .now)
         let samples: [TodoItem] = [
             TodoItem(title: "지난 서류 제출", status: .active, quadrant: .urgentImportant, dueDate: overdue, source: .siri),
-            TodoItem(title: "회의 자료 마무리", status: .active, quadrant: .urgentImportant, dueDate: today9, calendarEventID: "preview-event", source: .app),
+            TodoItem(
+                title: "회의 자료 마무리", status: .active, quadrant: .urgentImportant,
+                dueDate: today9, calendarEventID: "preview-event", source: .app
+            ),
             TodoItem(title: "장보기", status: .active, quadrant: .urgentNotImportant, dueDate: today14, source: .homeWidget),
-            TodoItem(title: "운동 계획 세우기", status: .active, quadrant: .importantNotUrgent, dueDate: inTwoDays, source: .actionButton),
+            TodoItem(
+                title: "운동 계획 세우기", status: .active, quadrant: .importantNotUrgent,
+                dueDate: inTwoDays, source: .actionButton
+            ),
             TodoItem(title: "부모님 선물 준비", status: .active, quadrant: .importantNotUrgent, dueDate: inFiveDays, source: .shortcut),
             TodoItem(title: "건강검진 예약", status: .active, quadrant: .importantNotUrgent, dueDate: inTwoWeeks, source: .app),
         ]

@@ -39,6 +39,15 @@ analyzer_rules:
 disabled_rules:
   # SwiftUI view bodies legitimately nest deeply.
   - nesting
+  # House style is SwiftFormat's `--commas always` (trailing commas required);
+  # this rule enforces the opposite.
+  - trailing_comma
+  # The product IS a TODO app — Korean prose and doc comments say "TODO"
+  # without marking work items.
+  - todo
+  # `let _ = observable.property` is REQUIRED inside SwiftUI result builders
+  # (plain `_ =` does not compile there); it is how views subscribe.
+  - redundant_discardable_let
 
 line_length:
   warning: 130
@@ -57,6 +66,11 @@ file_length:
 function_body_length:
   warning: 80
   error: 120
+
+# Exhaustive parsers (DeepLink.parse) switch over every case by design.
+cyclomatic_complexity:
+  warning: 16
+  error: 25
 
 identifier_name:
   min_length: 1 # allow `i`, `x`, Korean-domain short names

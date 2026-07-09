@@ -24,7 +24,7 @@ public enum SharedStore {
     /// App Group container URL. In a correctly signed build this never fails;
     /// failing silently would split the store between app and widgets, so in
     /// DEBUG we crash loudly instead.
-    public nonisolated static func appGroupURL() -> URL? {
+    nonisolated public static func appGroupURL() -> URL? {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: AppGroup.identifier)
     }
 
@@ -34,7 +34,10 @@ public enum SharedStore {
             let storeURL = groupURL.appendingPathComponent("HWANGTODO.store")
             configuration = ModelConfiguration("HWANGTODO", schema: schema, url: storeURL)
         } else {
-            assertionFailure("App Group \(AppGroup.identifier) unavailable — check signing/entitlements. Falling back to a local store; widgets will not see this data.")
+            assertionFailure(
+                "App Group \(AppGroup.identifier) unavailable — check signing/entitlements. "
+                    + "Falling back to a local store; widgets will not see this data."
+            )
             log.fault("App Group container missing; using local Application Support store")
             configuration = ModelConfiguration("HWANGTODO", schema: schema)
         }

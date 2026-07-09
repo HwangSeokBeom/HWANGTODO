@@ -45,13 +45,17 @@ struct RootTabView: View {
             }
         }
         .sensoryFeedback(.success, trigger: captureCount)
-        .sheet(item: $router.presentedSheet, onDismiss: { router.pendingCaptureSource = nil }) { sheet in
-            switch sheet {
-            case .capture: CaptureSheetView()
-            case .chat: ChatView()
-            case .focus: FocusView()
+        .sheet(
+            item: $router.presentedSheet,
+            onDismiss: { router.pendingCaptureSource = nil },
+            content: { sheet in
+                switch sheet {
+                case .capture: CaptureSheetView()
+                case .chat: ChatView()
+                case .focus: FocusView()
+                }
             }
-        }
+        )
         .sheet(item: presentedTask) { task in
             TaskDetailView(taskID: task.id)
         }
@@ -73,6 +77,7 @@ private struct PresentedTask: Identifiable {
 }
 
 #Preview {
+    // swiftlint:disable:next force_try
     let container = try! ModelContainer(
         for: SharedStore.schema,
         configurations: [ModelConfiguration(isStoredInMemoryOnly: true)]

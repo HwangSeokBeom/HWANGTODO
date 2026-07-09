@@ -4,7 +4,7 @@ import SwiftData
 /// Sendable value snapshot of "everything a glance surface needs" — widget
 /// timelines, the Live Activity, and lock-screen entries render from this so
 /// they never hold live model objects.
-public nonisolated struct GlanceSnapshot: Sendable, Hashable {
+nonisolated public struct GlanceSnapshot: Sendable, Hashable {
     public struct TaskSummary: Sendable, Hashable, Identifiable {
         public let id: UUID
         public let title: String
@@ -72,10 +72,23 @@ public nonisolated struct GlanceSnapshot: Sendable, Hashable {
     /// Placeholder content for widget galleries and previews.
     public static let placeholder = GlanceSnapshot(
         date: .now,
-        quadrantCounts: [.urgentImportant: 2, .importantNotUrgent: 3, .urgentNotImportant: 1, .notUrgentNotImportant: 1, .unassigned: 2],
+        quadrantCounts: [
+            .urgentImportant: 2, .importantNotUrgent: 3,
+            .urgentNotImportant: 1, .notUrgentNotImportant: 1, .unassigned: 2,
+        ],
         topTasks: [
-            .urgentImportant: [TaskSummary(id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant, isDueToday: true, hasCalendarEvent: true)],
-            .importantNotUrgent: [TaskSummary(id: UUID(), title: "운동 계획 세우기", quadrant: .importantNotUrgent, isDueToday: false, hasCalendarEvent: false)],
+            .urgentImportant: [
+                TaskSummary(
+                    id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant,
+                    isDueToday: true, hasCalendarEvent: true
+                ),
+            ],
+            .importantNotUrgent: [
+                TaskSummary(
+                    id: UUID(), title: "운동 계획 세우기", quadrant: .importantNotUrgent,
+                    isDueToday: false, hasCalendarEvent: false
+                ),
+            ],
         ],
         inboxCount: 2,
         urgentCount: 2,
@@ -83,7 +96,10 @@ public nonisolated struct GlanceSnapshot: Sendable, Hashable {
         todayDoneCount: 3,
         routineTodayTotal: 3,
         routineTodayDone: 2,
-        nextTask: TaskSummary(id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant, isDueToday: true, hasCalendarEvent: true),
+        nextTask: TaskSummary(
+            id: UUID(), title: "회의 자료 마무리", quadrant: .urgentImportant,
+            isDueToday: true, hasCalendarEvent: true
+        ),
         calendarLinkedToday: []
     )
 }
@@ -137,7 +153,10 @@ public extension GlanceSnapshot {
             routineTodayTotal: routines.count,
             routineTodayDone: routinesDone.count,
             nextTask: next.map { summary(of: $0, calendar: calendar, now: now) },
-            calendarLinkedToday: dueToday.filter(\.hasCalendarEvent).prefix(3).map { summary(of: $0, calendar: calendar, now: now) }
+            calendarLinkedToday: dueToday
+                .filter(\.hasCalendarEvent)
+                .prefix(3)
+                .map { summary(of: $0, calendar: calendar, now: now) }
         )
     }
 

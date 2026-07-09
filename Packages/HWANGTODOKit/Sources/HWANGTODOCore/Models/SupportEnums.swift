@@ -3,7 +3,7 @@ import Foundation
 /// Lifecycle bucket. Fresh captures are `inbox` (정리 전); organized work is
 /// `active`; `archived` items appear under 지난 기록. Raw values are frozen —
 /// they live in the on-disk store.
-public nonisolated enum TaskStatus: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
+nonisolated public enum TaskStatus: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
     case inbox, active, done, archived
 
     public var id: String { rawValue }
@@ -19,7 +19,7 @@ public nonisolated enum TaskStatus: String, Codable, CaseIterable, Identifiable,
 }
 
 /// Optional priority — deliberately low-key so the app never nags.
-public nonisolated enum TaskPriority: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
+nonisolated public enum TaskPriority: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
     case none, normal, high
 
     public var id: String { rawValue }
@@ -35,7 +35,7 @@ public nonisolated enum TaskPriority: String, Codable, CaseIterable, Identifiabl
 
 /// Where a task was captured from — surfaced as a small Korean badge (spec §5).
 /// Raw values are frozen — they live in the on-disk store.
-public nonisolated enum CaptureSource: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
+nonisolated public enum CaptureSource: String, Codable, CaseIterable, Identifiable, Hashable, Sendable {
     case app, shortcut, siri, actionButton, lockScreenWidget, homeWidget, controlCenter, notification, selfChat
 
     public var id: String { rawValue }

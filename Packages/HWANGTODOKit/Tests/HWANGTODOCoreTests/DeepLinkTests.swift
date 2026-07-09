@@ -8,12 +8,12 @@ import Testing
 @Suite("DeepLink — URL 왕복")
 struct DeepLinkTests {
     /// Fixed UUID so the task round-trip is reproducible.
-    private nonisolated static let taskID = UUID(uuidString: "6F9B25C4-6F0A-4D3B-9A3E-2C5D1B7A8E01")!
+    nonisolated private static let taskID = UUID(uuidString: "6F9B25C4-6F0A-4D3B-9A3E-2C5D1B7A8E01")!
 
     /// Every representable deep link, including the query-carrying and
     /// path-carrying variants. Nonisolated: parameterized-test arguments are
     /// enumerated outside the suite's actor.
-    private nonisolated static let allLinks: [DeepLink] = [
+    nonisolated private static let allLinks: [DeepLink] = [
         .captureHome(showCompleted: false),
         .captureHome(showCompleted: true),
         .organize(quadrant: nil),

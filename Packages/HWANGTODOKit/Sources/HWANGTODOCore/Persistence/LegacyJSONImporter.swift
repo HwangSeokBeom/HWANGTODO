@@ -67,7 +67,8 @@ public enum LegacyJSONImporter {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
 
-        let tasksImported = importFile(base.appendingPathComponent("hwangtodo_tasks.json"), decoder: decoder, as: [LegacyTask].self) { tasks in
+        let tasksURL = base.appendingPathComponent("hwangtodo_tasks.json")
+        let tasksImported = importFile(tasksURL, decoder: decoder, as: [LegacyTask].self) { tasks in
             for legacy in tasks {
                 context.insert(TodoItem(
                     id: legacy.id,
@@ -90,7 +91,8 @@ public enum LegacyJSONImporter {
             }
         }
 
-        let routinesImported = importFile(base.appendingPathComponent("hwangtodo_routines.json"), decoder: decoder, as: [LegacyRoutine].self) { routines in
+        let routinesURL = base.appendingPathComponent("hwangtodo_routines.json")
+        let routinesImported = importFile(routinesURL, decoder: decoder, as: [LegacyRoutine].self) { routines in
             for legacy in routines {
                 context.insert(Routine(
                     id: legacy.id,
@@ -104,7 +106,8 @@ public enum LegacyJSONImporter {
             }
         }
 
-        let chatImported = importFile(base.appendingPathComponent("hwangtodo_chat.json"), decoder: decoder, as: [LegacyChatMessage].self) { messages in
+        let chatURL = base.appendingPathComponent("hwangtodo_chat.json")
+        let chatImported = importFile(chatURL, decoder: decoder, as: [LegacyChatMessage].self) { messages in
             for legacy in messages {
                 context.insert(ChatEntry(
                     id: legacy.id,

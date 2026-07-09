@@ -8,7 +8,7 @@ import ActivityKit
 
 /// One system surface's live availability, powering the 설정 checklist
 /// (spec §13): not "this feature exists" but "can you use it right now".
-public nonisolated enum SurfaceState: Sendable, Hashable {
+nonisolated public enum SurfaceState: Sendable, Hashable {
     /// Verified working (permission granted / widget placed …).
     case available
     /// The user must do something first (grant permission, add widget …).
